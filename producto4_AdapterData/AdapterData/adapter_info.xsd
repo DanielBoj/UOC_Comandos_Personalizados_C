@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="adapter_info">
+
+<xs:complexType>
+    <xs:sequence>
+        <xs:element name="ip" type="xs:string"/>
+        <xs:element name="mask" type="xs:string"/>
+        <xs:element name="gateway" type="xs:string"/>
+        <xs:element name="dns_server" type="xs:string"/>
+        <xs:element name="average_dns_speed" type="xs:string"/>
+        <xs:complexContent>
+            <xs:extension name="jump">
+                <xs:sequence>
+                    <xs:element name="jump_number" type="xs:string"/>
+                    <xs:element name="ip" type="xs:string"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:sequence>
+
+</xs:complexType>
+</xs:schema>
